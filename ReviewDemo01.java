@@ -1,27 +1,57 @@
 import java.util.Scanner;
-//v0.6 for문을 while문으로
+//v0.7 매서드 사용
 public class ReviewDemo01 {
-    public static void main(String[] args) {
-        // 소수 : 1과 자기자신외에는 나누어 떨어지지 않는 수
-        Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
-        boolean isPrime = true;
+    public static boolean isPrime(int n){
+        boolean prime = true;
 
         int k = 2;
-        while(k<number) {
-            if (number % k == 00) {
-                isPrime = false;
+        while (k < n) {
+            if(n % k ==0) {
+                prime = false;
                 break;
             }
             k++;
         }
+        return prime;
+    }
 
-        if(isPrime) // isPrime 변수 값이 true면
-            System.out.println(number + "은(는) 소수!");
-        else
-            System.out.println(number + "은(는) 소수가 아닙니다");
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number;
+
+        do{
+            System.out.println("2 이상의 정수를 입력하세요.");
+            number = sc.nextInt();
+        } while (number <= 1);
+
+        System.out.println(number + (isPrime(number) ? "은(는) 소수!" : "은(는) 소수가 아닙니다."));
     }
 }
+
+//import java.util.Scanner;
+////v0.6 for문을 while문으로
+//public class ReviewDemo01 {
+//    public static void main(String[] args) {
+//        // 소수 : 1과 자기자신외에는 나누어 떨어지지 않는 수
+//        Scanner sc = new Scanner(System.in);
+//        int number = sc.nextInt();
+//        boolean isPrime = true;
+//
+//        int k = 2;
+//        while(k<number) {
+//            if (number % k == 00) {
+//                isPrime = false;
+//                break;
+//            }
+//            k++;
+//        }
+//
+//        if(isPrime) // isPrime 변수 값이 true면
+//            System.out.println(number + "은(는) 소수!");
+//        else
+//            System.out.println(number + "은(는) 소수가 아닙니다");
+//    }
+//}
 
 //import java.util.Scanner;
 ////v0.5 for문 안의 불필요한 반복횟수 더더더 줄이기
