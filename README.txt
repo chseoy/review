@@ -1,5 +1,4 @@
-"review" repository는 
-수업시간에 배운 내용을 복습하기 위해 만들었습니다.
+## "review" repository는 수업시간에 배운 내용을 복습하기 위해 만들었습니다.
 
 ====== ✔ Git Hub 명령어 정리 ✔ ======
 
@@ -49,6 +48,7 @@ git push origin master : 설정한 repository에 올림
 ! [rejected] master -> master (non-fast-forward)
 원인    : .gitignore 파일 또는 README.md 파일로 인해 발생
 해결법 : git push origin +master (브랜치 이름 앞에 +를 붙힘 => 강제적)
+
 
 ====== ✔ Git Hub 시험 준비 ✔ ======
 1. git clone http://~~~
