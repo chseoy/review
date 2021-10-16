@@ -49,3 +49,10 @@ git push origin master : 설정한 repository에 올림
 ! [rejected] master -> master (non-fast-forward)
 원인    : .gitignore 파일 또는 README.md 파일로 인해 발생
 해결법 : git push origin +master (브랜치 이름 앞에 +를 붙힘 => 강제적)
+
+====== ✔ Git Hub 시험 준비 ✔ ======
+1. git clone http://~~~
+2. 파일 수정
+3. git add .
+4. git commit -m ""
+3. git push
